@@ -14,6 +14,7 @@
     font-family: Helvetica;
     font-size: 70px;
     margin-bottom: 0;
+    color: white;
 
 }
 
@@ -21,7 +22,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    
 }
 
 #text h2 {
@@ -29,6 +31,7 @@
     font-size: 40px;
     font-weight: lighter;
     padding: 10px;
+    color: white;
 }
 #portrait {
     width: 350px;
@@ -44,7 +47,7 @@
 }
 
 #info #icons a {
-    color: black
+    color: white
 }
 
 #info #icons svg {
@@ -52,5 +55,5 @@
 }
 
 #info #icons svg:hover {
-    color: gray
+    color: rgb(0, 207, 138);
 }

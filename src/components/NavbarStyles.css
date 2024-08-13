@@ -1,0 +1,48 @@
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav h1 {
+    font-size: 30px;
+    padding-left: 30px;
+    font-family: Helvetica;
+    color: white;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+    margin: 0;
+    align-items: center;
+}
+
+#nav ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Helvetica;
+}
+
+#nav h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+#nav ul a:hover{
+    color: rgb(0, 207, 138);
+}
+
+@media screen and (max-width: 576px) {
+    #home {
+        visibility: hidden;
+    }
+
+    #nav h1 a{
+        padding: 5px;
+        border: 3px solid white;
+    }
+}
