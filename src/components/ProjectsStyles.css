@@ -32,14 +32,43 @@
     position:absolute;
     z-index: 10;
     display: grid;
-    background-color: black;
+    background-color: gray;
     top: 50%;
     left: 50%;
     width: 600px;
     height: 300px;
     transform: translate(-50%, -50%);
+    grid-template-areas: 
+        'T T T C'
+        'D D D D'
+        'D D D D'
+        'G G . .';
     
 
+}
+
+#curtain h1{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: Helvetica;
+    grid-area: T;
+    font-size: 50px;
+    background-color: pink;
+}
+
+#description{
+    grid-area: D;
+    background-color: green;
+}
+
+#link{
+    grid-area: G;
+    background-color: blue;
+}
+
+#closeButton {
+    grid-area: C;
+    background-color: red;
 }
 
 #projButton{
