@@ -38,11 +38,14 @@
     width: 600px;
     height: 300px;
     transform: translate(-50%, -50%);
+    grid-template-columns: 30% 30% 36.5%;
+    grid-template-rows: 30% 40% 23%;
     grid-template-areas: 
-        'T T T C'
-        'D D D D'
-        'D D D D'
-        'G G . .';
+        'T T C'
+        'D D I'
+        'G . .';
+    column-gap: 10px;
+    row-gap: 10px;
     
 
 }
@@ -52,22 +55,27 @@
     margin-top: 10px;
     font-family: Helvetica;
     grid-area: T;
-    font-size: 50px;
+    font-size: 30px;
     background-color: pink;
 }
 
 #description{
     grid-area: D;
+    margin-left: 30px;
     background-color: green;
 }
 
 #link{
     grid-area: G;
+    margin-left: 30px;
+    margin-bottom: 10px;
     background-color: blue;
 }
 
 #closeButton {
     grid-area: C;
+    margin-bottom: 40px;
+    margin-left: 160px;
     background-color: red;
 }
 

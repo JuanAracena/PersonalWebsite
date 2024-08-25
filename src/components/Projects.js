@@ -2,7 +2,6 @@ import React from "react";
 import {FaGithub} from "react-icons/fa";
 import './ProjectsStyles.css'
 import {useState} from "react"
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 
 function hiddenDiv(title, descr, github, isVisible, setIsVisible){
@@ -18,8 +17,11 @@ function hiddenDiv(title, descr, github, isVisible, setIsVisible){
             <div id="description">
                 <p>{descr}</p>
             </div>
+            <div id="projImageDiv">
+                <img className="projImage" src="" alt=""></img>
+            </div>
             <div id="link">
-                <a href="https://github.com/JuanAracena/OnlineAuctionSystem"><FaGithub size="4em"/></a>
+                <a href={github}><FaGithub size="4em"/></a>
             </div>
 
         </div>
@@ -27,8 +29,12 @@ function hiddenDiv(title, descr, github, isVisible, setIsVisible){
 }
 
 function Projects() {
-    // const button = document.querySelector("div description")
-    // console.log(button)
+    const list = {
+        "title" : ["Online Auction System"],
+        "descr" : ["Description"],
+        "image" : ["Image"],
+        "github" : ["https://github.com/JuanAracena/OnlineAuctionSystem"]
+    }
 
     const [isVisible, setIsVisible] = useState(false);
     
@@ -37,14 +43,14 @@ function Projects() {
             <h1>Projects</h1>
             <div id="box">
                 <div classname="project-card">
-                    <img classname="proj" src=""></img>
+                    <img classname="proj" src="" alt=""></img>
                     <div classname="content">
                         <input id="projButton" type="button" value="Online Auction System" onClick={(event) => {event.preventDefault()
                         setIsVisible(!isVisible)}}>
                         {isVisible ? console.log("Show content") : console.log("Hide content")}
                         </input>
                         {isVisible && (
-                            hiddenDiv("title", "descr", "github", isVisible, setIsVisible)
+                            hiddenDiv(list.title[0], list.descr[0], list.github[0], isVisible, setIsVisible)
                         )}     
                             
                     </div>
