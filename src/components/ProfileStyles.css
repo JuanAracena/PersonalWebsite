@@ -2,12 +2,6 @@
     padding: 0;
 }
 
-#list {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-
-}
 #info {
     display: flex;
     flex-direction: column;
@@ -17,20 +11,20 @@
 }
 
 #info h1 {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-size: 70px;
     margin-bottom: 0;
-    color: white;
+    color: #ffffff;
 
 }
 
 
 #text h2 {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-size: 40px;
     font-weight: lighter;
     padding: 10px;
-    color: white;
+    color: #ffffff;
 }
 
 #text {
@@ -42,8 +36,8 @@
 }
 
 #portrait {
-    width: 350px;
-    height: 350px;
+    width: 35%;
+    height: 35%;
     border-radius: 50px;
     padding: 20px;
 }
@@ -56,7 +50,7 @@
 }
 
 #info #icons a {
-    color: white
+    color: #ffffff
 }
 
 #info #icons svg {
@@ -64,7 +58,7 @@
 }
 
 #info #icons svg:hover {
-    color: rgb(0, 207, 138);
+    color: #8D818C;
 }
 
 @media screen and (max-width: 1000px) {
@@ -72,7 +66,7 @@
         font-size: 50px;
     }
     #info h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
     #info #icons {
         size: 1em;
@@ -84,14 +78,14 @@
     #portrait {
         width: 50%;
         height: 50%;
-        padding: 20px;
+        padding: 40px;
     }
 
     #info h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
     #info h2 {
-        font-size: 15px;
+        font-size: 20px;
         padding: 0;
     }
 }

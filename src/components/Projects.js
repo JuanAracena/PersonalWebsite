@@ -16,7 +16,7 @@ function Projects() {
                     <p>Application that allows online auctioning and bidding</p>
                     <a href="https://github.com/JuanAracena/OnlineAuctionSystem"><FaGithub size="4em"/></a>
                 </div>
-            </div>      
+            </div>        
         </div>
     </div>
         
