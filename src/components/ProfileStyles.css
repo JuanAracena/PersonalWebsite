@@ -22,7 +22,9 @@
 
 }
 
-
+#text {
+    height: 70px;
+}
 
 #text h2 {
     font-family: Montserrat;
@@ -33,12 +35,13 @@
     
 }
 
-/* #portrait {
-    width: 414px;
-    height: 484px;
+#portrait {
+    max-width: 100%;
+    height: 100%;
     border-radius: 50px;
     padding: 20px;
-} */
+    
+}
 
 /* 
 
