@@ -13,7 +13,7 @@ function Projects() {
                 <img className="proj" src="OAS.jpg" alt=""></img>
                 <div className="content">
                     <p className="title">Online Auction System</p>
-                    <p>Application that allows online auctioning and bidding</p>
+                    <p className="descr">Application that allows online auctioning and bidding</p>
                     <a href="https://github.com/JuanAracena/OnlineAuctionSystem"><FaGithub size="4em"/></a>
                 </div>
             </div>        
