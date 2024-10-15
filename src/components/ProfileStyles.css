@@ -7,6 +7,7 @@
     justify-content: center;
     padding-top: 30px;
     grid-template-rows: 0fr 0fr 0fr 0fr;
+    overflow: auto;
     
   
     
@@ -36,6 +37,7 @@
     margin-left: 50px;
     
 }
+
 
 #portrait {
 
