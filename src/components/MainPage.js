@@ -54,11 +54,9 @@ function MainPage() {
         .then((result) => {
             console.log('Email sent:', result.text);
             alert('Message sent!');
-            form.current.reset();
         })
         .catch((error) => {
             console.error('Error sending email:', error.text);
-            alert('Something went wrong.');
         });
 
 
